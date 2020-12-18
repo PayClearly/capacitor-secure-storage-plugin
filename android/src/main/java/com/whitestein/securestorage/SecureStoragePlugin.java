@@ -7,6 +7,7 @@ import com.getcapacitor.NativePlugin;
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
+import java.util.*;
 
 import java.nio.charset.Charset;
 import java.util.Set;
@@ -97,7 +98,7 @@ public class SecureStoragePlugin extends Plugin {
     public JSObject _keys() {
         String[] keys = this.passwordStorageHelper.keys();
         JSObject ret = new JSObject();
-        ret.put("value", keys);
+        ret.put("value", Arrays.toString(keys));
         return ret;
     }
 
