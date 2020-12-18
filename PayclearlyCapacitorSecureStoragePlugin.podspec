@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
-  s.name = 'CapacitorSecureStoragePlugin'
-  s.version = '0.5.0'
+  s.name = 'PayClearlyCapacitorSecureStoragePlugin'
+  s.version = '0.5.4'
   s.summary = 'securely store secrets such as usernames, passwords, tokens, certificates or other sensitive information (strings) on iOS & Android'
   s.license = 'MIT'
-  s.homepage = 'https://github.com/martinkasa/capacitor-secure-storage-plugin.git'
-  s.author = 'martinkasa'
-  s.source = { :git => 'https://github.com/martinkasa/capacitor-secure-storage-plugin.git', :tag => s.version.to_s }
+  s.homepage = 'https://github.com/PayClearly/capacitor-secure-storage-plugin.git'
+  s.author = 'mankee'
+  s.source = { :git => 'https://github.com/PayClearly/capacitor-secure-storage-plugin.git', :tag => s.version.to_s }
   s.source_files = 'ios/Plugin/**/*.{swift,h,m,c,cc,mm,cpp}'
   s.ios.deployment_target  = '11.0'
   s.dependency 'Capacitor'
